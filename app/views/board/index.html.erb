@@ -1,0 +1,11 @@
+<table border="1" cellspacing="0" cellpadding="0">
+	<% @board.get_cells.each do |row| %>
+		<tr>
+			<% row.each do |column| %>
+				<td style="width: 20px; text-align: center;">
+					<%= column %>
+				</td>
+			<% end %>
+		</tr>
+	<% end %>
+</table>
